@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml"
+width="760" height="600" frameRate="25"
+paddingLeft="0" paddingRight="0" paddingBottom="0" paddingTop="0"
+applicationComplete="myGame.init()" 
+backgroundGradientColors="[0xffffff, 0xffffff]"
+xmlns:atomz="atomz.*" 
+>
+    <mx:Style source="Style.css"/>
+	<atomz:Game id="myGame" width="100%" height="100%"/>
+</mx:Application>

@@ -1,0 +1,117 @@
+HOUR 1
+- Project code layout
+- Prepared placeholder assets for atoms.
+- Base code structure for atom in place
+HOUR 2
+- Added basic dragging support for atoms.
+- Added a simple random level initialization code
+- Begun work on atom linking.
+HOUR 3
+- Got the linking rules and basic graphics working.
+- Added a new rule to design, links work only on
+    main structure
+- Game appeared to be too easy, design revised to add particle movement
+& penalties for particles that go off screen unlinked.
+HOUR 4
+- Added atom movement and goal mechanics. 
+    Game now appears to be much more challenging.
+- The goal code is not working correctly right now, atoms and links are not
+    always removed correctly.
+HOUR 5
+- Goal mechanics fixed.
+- Started creating classes to handle some basic graphics effects for the game.
+HOUR 6
+- Still working on game effects (droping point text), and points system.
+---------------------------------------------------------------------------------------------------
+HOUR 7
+- Points and combo system now working. First extensive tests of the game:
+Picking 32x32 spheres may be difficult when palying fast: spheres should be bigger.
+Possibly less spheres around but faster game.
+- Tried less, bigger spheres, seems to be working.
+- Discovered that Picking is not working really well, probably needs revision.
+HOUR 8
+- Found a dirty solution to picking problems, but there is some nasty error
+    hidden somewhere. I'll ignore it for now unless it shows up again.
+- Added support for streaks.
+HOUR 9
+- Begun working on atom collision physics.
+HOUR 10
+- Atom physics pretty much working
+- Basic level support
+- Tried having atoms spawn on a specified position (side of screen)
+    game is much much better this way (less confusion).
+HOUR 11
+- Game now stops when life is over.
+- Atom physics are a little rough, movement is not really nice. need to smooth it out
+    later on in developement if I have time.
+- Done a little bit of parameter tweaking. The game still has the nasty bug with
+picking. I need to solve this or at least find a workaround. It manifests more often when
+a lot of atoms are on screen.
+- Gameplay modified, allow for linking outside of main structure,
+returned to random spawning of atoms. Seems to be more funny.
+HOUR 12
+- Revised physics code, some hacks added but now it seems to be
+working much better.
+- Prepared placeholders graphics for main, guide and game over screens.
+---------------------------------------------------------------------------------------------------
+HOUR 13
+- Added support code for main, guide and game over screens, and prepared the main
+state machine to handle game state transitions. 
+HOUR 14
+- Revised combo cont, now works with links.
+HOUR 15
+- First try with webserver and facebook integration. Discovered that canvas page max width is 760px so I
+need to resize application screens.
+- Started work on php DB pages.
+HOUR 16
+- First try with facebook code in flash application. App seems to be locking up when fb code is active.
+- Login to facebook and friends list get now working. (Cite tutorial & facebook-flash-api)
+HOUR 17
+- Basic score uploading working. Quickly explored facebook feed publishing. 
+Not able to get it working. Since I don't have a lot of time left, I have to drop this feature.
+- Decided also to freeze top-ten feature for now. Game will just report player high score and
+all-time, worldwide high score. PHP pages have been fixed to work this way.
+HOUR 18
+- Facebook login now works in desktop and web mode, to simplify debugging.
+- Highscore downloading now working.
+- Page in facebook does seems to overlap, check height.
+- Upload score only when score > player highscore.
+---------------------------------------------------------------------------------------------------
+HOUR 19
+- Game window now has rounded borders, looks better insite the facebook canvas.
+HOUR 20
+- Added glow effect to atoms and links
+- Fixed points formatting.
+- Revised points and combos
+HOUR 21
+- Added text overlays for game over, level up and game start.
+HOUR 22
+- Atom placeholders substituted with final versions.
+- Added glow to color locked atoms and removed link wiggly movement,
+    looks better.
+- Points now updated and shown immediately upon link creation.
+HOUR 23
+- Added sounds.
+- Removed the only partially working leaderboard and facebook integration code
+to swith to MochiAdds. Outstanding service, leaderboards were integrated
+using just a couple lines of code, plus MochiAds offers game hosting for free.
+I whish I has discovered this service before spending so much time working
+with the Facebook API and implementing my own Leaderboard DB and php code.
+HOUR 24
+- Finalized main screen.
+- Finalized the guide and game over screen
+- Corrected some final graphics and gameplay glitches.
+
+FINAL TOUGHTS
+---------------------------------------------------------------------------------------------------
+- Game not as polished ad I whished but pretty close to what I had in mind.
+- Lots of time spent on implementing my own leaderboard solution. Documenting better
+at the beginning would have made me gain at least 2-3 developement hours.
+- Having gameplay working since the very beginning was very important because
+ - Allowed me to try the game since the beginning and tweak a lot of gameplay aspects 
+ during developement.
+ - Gameplay is the only thing that cannot be dropped from the game. Everything else, gfx
+ quality, additional features like leaderboards etc. can be negotiated. Giving priority to
+ gameplay mechanics is foundamental.
+
+
